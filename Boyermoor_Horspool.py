@@ -1,6 +1,5 @@
 pattern1="xtpxtd"
-text="xluxtpxtdqwtpxtpxtsyxtpxtdy"
-#print(len(pattern))
+text="k xluxtpxtdqwtpxtpxtsyxtpxtdy"
 table={}
 
 def rightmost(pattern, character):
@@ -31,17 +30,19 @@ def CheckPaternMatch(possition,text,pattern):
 
 def Boyermoore(text,pattern):
     possition=0
+    matchings=True
     HpBc(pattern)
     while(possition<len(text)-len(pattern)):
         if (CheckPaternMatch(possition,text,pattern)==True):
             print("Pattern found at index :" , possition)
-           
+            matchings +1
         if text[possition+len(pattern)-1] in table:
             possition = possition + table[text[possition+len(pattern)-1]]
           
         else:
             possition = possition + len(pattern)
-           
+        
+        if(matchings==0):
+            print("Pattern not found in given text ")
     
 Boyermoore(text,pattern1)
-print(table)
