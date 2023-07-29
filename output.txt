@@ -1,0 +1,2 @@
+Pattern found at index  : 3 
+Pattern found at index  : 20 
