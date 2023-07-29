@@ -5,7 +5,7 @@ t="text1.txt"
 with open(t,'r') as file:
     text=file.read()
 
-file=open('')
+file=open('output.txt','w')
 table={}
 
 def rightmost(pattern, character):
@@ -40,7 +40,8 @@ def Boyermoore(text,pattern):
     HpBc(pattern)
     while(possition<len(text)-len(pattern)):
         if (CheckPaternMatch(possition,text,pattern)==True):
-            print("Pattern found at index :" , possition)
+            #print("Pattern found at index :" , possition)
+            file.write("Pattern found at index  : %d \n" % possition)
             matchings +1
         if text[possition+len(pattern)-1] in table:
             possition = possition + table[text[possition+len(pattern)-1]]
@@ -53,3 +54,4 @@ def Boyermoore(text,pattern):
 
 
 Boyermoore(text,pattern1)
+file.close()
