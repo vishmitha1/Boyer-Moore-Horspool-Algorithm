@@ -1,5 +1,11 @@
-pattern1="xtpxtd"
-text="k xluxtpxtdqwtpxtpxtsyxtpxtdy"
+p="pattern1.txt"
+with open(p,'r') as file:
+    pattern1=file.read()
+t="text1.txt"
+with open(t,'r') as file:
+    text=file.read()
+
+file=open('')
 table={}
 
 def rightmost(pattern, character):
@@ -44,5 +50,6 @@ def Boyermoore(text,pattern):
         
         if(matchings==0):
             print("Pattern not found in given text ")
-    
+
+
 Boyermoore(text,pattern1)
