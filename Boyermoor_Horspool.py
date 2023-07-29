@@ -27,13 +27,21 @@ def CheckPaternMatch(possition,text,pattern):
 
 #HpBc(pattern1)    
 #print(table)
-# Next shift possition = position + table[text[possition]+length-1]
-possition=0
-def Boyermoore(text,pattern):
-    HpBc(pattern)
-    while(possition<len(text)-len(pattern1)):
-        if (CheckPaternMatch(possition,text,pattern)):
-            print("Pattern found at index :" , possition)
-        possition = possition + table[text[possition]+len(text)-1]
+# Next shift possition = position + table[text[possition+length-1]]
 
+def Boyermoore(text,pattern):
+    possition=0
+    HpBc(pattern)
+    while(possition<len(text)-len(pattern)):
+        if (CheckPaternMatch(possition,text,pattern)==True):
+            print("Pattern found at index :" , possition)
+           
+        if text[possition+len(pattern)-1] in table:
+            possition = possition + table[text[possition+len(pattern)-1]]
+          
+        else:
+            possition = possition + len(pattern)
+           
+    
 Boyermoore(text,pattern1)
+print(table)
