@@ -4,7 +4,7 @@ with open(p,'r') as file:
 t="text1.txt"
 with open(t,'r') as file:                           #read text file
     text=file.read()
-
+print(text[3])
 file=open('output.txt','w')                         #open outputfile
 table={}
 
@@ -17,12 +17,13 @@ def HpBc(pattern):                                  #This function helps to Crea
     for x in pattern:
         if(x!= pattern[temp]):
             if rightmost(pattern,x)-1>0:
-                table[x]=rightmost(pattern,x)-1
+                table[x]=len(pattern)-rightmost(pattern,x)-1
             else:
                 table[x]=0   
 
 def CheckPaternMatch(possition,text,pattern):        #this Function use for to checking pattern matching
     substring = text[possition:possition+len(pattern)]
+   
     if(substring==pattern):
         return True
     else:
@@ -52,3 +53,4 @@ def Boyermoore(text,pattern):                       # in this function calling a
 
 Boyermoore(text,pattern1)
 file.close()
+
