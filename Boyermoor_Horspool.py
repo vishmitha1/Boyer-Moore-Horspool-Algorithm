@@ -38,16 +38,16 @@ def Boyermoore(text,pattern):                       # in this function calling a
         if (CheckPaternMatch(possition,text,pattern)==True):
             print("Pattern found at index :" , possition)
             file.write("Pattern found at index  : %d \n" % possition)
-            matchings +1
+            matchings=matchings+1
         if text[possition+len(pattern)-1] in table:
             possition = possition + table[text[possition+len(pattern)-1]]
           
         else:
             possition = possition + len(pattern)
         
-        if(matchings==0):
+    if(matchings==0):
             print("Pattern not found in given text ")
-            file.write("Pattern not found in given text ")
+            file.write("Pattern not found in given text ")    
 
 
 Boyermoore(text,pattern1)
