@@ -1,13 +1,14 @@
-p=input("Enter pattern's text file name: ")
+p=input("Enter pattern's text file name: ")         #get pattern file name as a input
 #p="pattern1.txt"                                    #read patern file
 with open(p,'r') as file:
     pattern1=file.read()
-t=p=input("Enter Your Text's text file name: ")
+t=input("Enter Your Text's text file name: ")     #get text file name as a input
 #t="text1.txt"
 with open(t,'r') as file:                           #read text file
     text=file.read()
-print(text[3])
-file=open('output.txt','w')                         #open outputfile
+
+outputfile=input("Enter the name that you want to save this output: ")    #Create output file name
+file=open(outputfile,'w')                         #open outputfile
 table={}
 
 def rightmost(pattern, character):                  #this finction helps to find rightmost characters indx
