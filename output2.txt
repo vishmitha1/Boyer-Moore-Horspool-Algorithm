@@ -1,0 +1,4 @@
+Pattern found at index  : 8 
+Pattern found at index  : 22 
+Pattern found at index  : 28 
+Pattern found at index  : 34 

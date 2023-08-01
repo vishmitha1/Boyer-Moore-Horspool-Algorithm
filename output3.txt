@@ -1,0 +1,2 @@
+Pattern found at index  : 7 
+Pattern found at index  : 14 
