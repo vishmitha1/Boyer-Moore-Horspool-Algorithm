@@ -1,6 +1,6 @@
 #  Boyer-Moore-Horspool-Algorithm
 Readme
-# About the inputs.
+# About the inputFiles.
 
 •	In this code patterns and texts get as external txt files. 
 
@@ -13,7 +13,7 @@ Readme
 •	When code ask file names then you should give the right filename that is pattern1.txt and text1.txt  .
 
 
-# About the outputs
+# About the outputFiles
 
 •	Also Output file name take from user.
 
@@ -22,6 +22,12 @@ Readme
 •	You must enter filename and its’s extension.
 
 •	As an example, if you want to save your output in file name output1 you must enter “output1.txt” as an input.
+
+<img width="683" alt="bm2" src="https://github.com/vishmitha1/Boyer-Moore-Horspool-Algorithm/assets/106392603/7b63a748-44c7-45cd-9b9c-9307292e55f0">
+
+<img width="476" alt="out" src="https://github.com/vishmitha1/Boyer-Moore-Horspool-Algorithm/assets/106392603/a553c466-6b5b-4963-925f-df83940177ab">
+
+
 
 
 
