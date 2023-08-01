@@ -1,14 +1,15 @@
-p=input("Enter pattern's text file name: ")         #get pattern file name as a input
-#p="pattern1.txt"                                    #read patern file
+p=input("Enter pattern's text file name: ")               #get pattern file name as a input                                   
+
 with open(p,'r') as file:
     pattern1=file.read()
 t=input("Enter Your Text's text file name: ")     #get text file name as a input
-#t="text1.txt"
+
 with open(t,'r') as file:                           #read text file
     text=file.read()
 
 outputfile=input("Enter the name that you want to save this output: ")    #Create output file name
 file=open(outputfile,'w')                         #open outputfile
+
 table={}
 
 def rightmost(pattern, character):                  #this finction helps to find rightmost characters indx
@@ -18,11 +19,10 @@ def rightmost(pattern, character):                  #this finction helps to find
 def HpBc(pattern):                                  #This function helps to Create HpBc Table
     temp=len(pattern)-1
     for x in pattern:
-        if(x!= pattern[temp]):
-            if rightmost(pattern,x)-1>0:
+            if(x!= pattern[temp]):
                 table[x]=len(pattern)-rightmost(pattern,x)-1
-            else:
-                table[x]=0   
+    
+               
 
 def CheckPaternMatch(possition,text,pattern):        #this Function use for to checking pattern matching
     substring = text[possition:possition+len(pattern)]
@@ -38,7 +38,7 @@ def Boyermoore(text,pattern):                       # in this function calling a
     possition=0
     matchings=0
     HpBc(pattern)
-    while(possition<len(text)-len(pattern)):
+    while(possition<=len(text)-len(pattern)):
         if (CheckPaternMatch(possition,text,pattern)==True):
             print("Pattern found at index :" , possition)
             file.write("Pattern found at index  : %d \n" % possition)
