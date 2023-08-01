@@ -27,6 +27,16 @@ Readme
 
 <img width="476" alt="out" src="https://github.com/vishmitha1/Boyer-Moore-Horspool-Algorithm/assets/106392603/a553c466-6b5b-4963-925f-df83940177ab">
 
+# How its Work
+
+<img width="404" alt="patter and text" src="https://github.com/vishmitha1/Boyer-Moore-Horspool-Algorithm/assets/106392603/f9395981-a475-4355-95a1-75116d9bfa8b">
+
+<img width="392" alt="create hpbc" src="https://github.com/vishmitha1/Boyer-Moore-Horspool-Algorithm/assets/106392603/881b057f-f5de-4b59-8323-811140426aec">
+
+Calculate Next Shifting Position:
+Position = position + Hpbc[text[position + (lengthofpattern -1 ) ]] 
+
+
 
 
 
