@@ -1,7 +1,9 @@
-p="pattern1.txt"                                    #read patern file
+p=input("Enter pattern's text file name: ")
+#p="pattern1.txt"                                    #read patern file
 with open(p,'r') as file:
     pattern1=file.read()
-t="text1.txt"
+t=p=input("Enter Your Text's text file name: ")
+#t="text1.txt"
 with open(t,'r') as file:                           #read text file
     text=file.read()
 print(text[3])
