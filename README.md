@@ -23,18 +23,25 @@ Readme
 
 •	As an example, if you want to save your output in file name output1 you must enter “output1.txt” as an input.
 
-<img width="683" alt="bm2" src="https://github.com/vishmitha1/Boyer-Moore-Horspool-Algorithm/assets/106392603/7b63a748-44c7-45cd-9b9c-9307292e55f0">
+<img width="683" alt="bm2" src="https://github.com/vishmitha1/Boyer-Moore-Horspool-Algorithm/assets/106392603/de6cdb50-063b-45e1-871f-b0e80e2c0cfc">
 
-<img width="476" alt="out" src="https://github.com/vishmitha1/Boyer-Moore-Horspool-Algorithm/assets/106392603/a553c466-6b5b-4963-925f-df83940177ab">
+
+<img width="476" alt="out" src="https://github.com/vishmitha1/Boyer-Moore-Horspool-Algorithm/assets/106392603/8d7f63c9-cad4-4e4f-bf6b-0fcde60ba86b">
+
 
 # How its Work
 
-<img width="404" alt="patter and text" src="https://github.com/vishmitha1/Boyer-Moore-Horspool-Algorithm/assets/106392603/f9395981-a475-4355-95a1-75116d9bfa8b">
 
-<img width="392" alt="create hpbc" src="https://github.com/vishmitha1/Boyer-Moore-Horspool-Algorithm/assets/106392603/881b057f-f5de-4b59-8323-811140426aec">
+
+
+<img width="392" alt="create hpbc" src="https://github.com/vishmitha1/Boyer-Moore-Horspool-Algorithm/assets/106392603/4257e298-9490-4db2-bf67-af9fbbf70725">
+
 
 Calculate Next Shifting Position:
 Position = position + Hpbc[text[position + (lengthofpattern -1 ) ]] 
+
+
+   
 
 
 
