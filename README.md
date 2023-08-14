@@ -45,6 +45,8 @@ Position = position + Hpbc[text[position + (lengthofpattern -1 ) ]]
 
 
 
-
+<a href="https://hits.sh/github.com/vishmitha1/Boyer-Moore-Horspool-Algorithm/">
+      <img alt="Hits" src="https://hits.sh/github.com/vishmitha1/Boyer-Moore-Horspool-Algorithm.svg?label=Views"/>
+</a>
 
 
